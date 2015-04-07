@@ -1,7 +1,7 @@
 FROM centos:latest
 MAINTAINER Ivan Koretskiy <gillbeits@gmail.com>
 
-ENV RUNTIME jdk
+ENV RUNTIME jre
 ENV VERSION 7
 ENV UPDATE 71
 ENV BUILD 14
@@ -17,5 +17,3 @@ RUN cd /opt \
 ENV JAVA_HOME /opt/${RUNTIME}1.${VERSION}.0_${UPDATE}
 
 RUN alternatives --install "/usr/bin/java" "java" "${JAVA_HOME}/bin/java" 1
-RUN alternatives --install "/usr/bin/javac" "javac" "${JAVA_HOME}/bin/javac" 1
-RUN alternatives --install "/usr/bin/jar" "jar" "${JAVA_HOME}/bin/jar" 1
