@@ -1,4 +1,4 @@
-ROM centos:latest
+FROM centos:latest
 MAINTAINER Ivan Koretskiy <gillbeits@gmail.com>
 
 RUN yum install -y wget tar
