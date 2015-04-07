@@ -3,8 +3,8 @@ MAINTAINER Ivan Koretskiy <gillbeits@gmail.com>
 
 ENV RUNTIME jdk
 ENV VERSION 8
-ENV UPDATE 25
-ENV BUILD 17
+ENV UPDATE 40
+ENV BUILD 26
 
 RUN yum install -y wget tar
 RUN cd /opt \
