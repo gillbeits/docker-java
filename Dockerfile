@@ -2,9 +2,9 @@ FROM centos:latest
 MAINTAINER Ivan Koretskiy <gillbeits@gmail.com>
 
 ENV RUNTIME jdk
-ENV VERSION 8
-ENV UPDATE 25
-ENV BUILD 17
+ENV VERSION 7
+ENV UPDATE 71
+ENV BUILD 14
 
 RUN yum install -y wget tar
 RUN cd /opt \
