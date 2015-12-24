@@ -12,7 +12,7 @@ RUN yum install -y wget tar \
         "http://download.oracle.com/otn-pub/java/jdk/${VERSION}u${UPDATE}-b${BUILD}/${RUNTIME}-${VERSION}u${UPDATE}-linux-x64.tar.gz" \
     && tar xvf ${RUNTIME}-${VERSION}u${UPDATE}-linux-x64.tar.gz \
     && rm -f ${RUNTIME}-${VERSION}u${UPDATE}-linux-x64.tar.gz \
-    && chown -R root: ${RUNTIME}1.${VERSION}.0_${UPDATE}
+    && chown -R root: ${RUNTIME}1.${VERSION}.0_${UPDATE} \
     && yum remove -y wget tar
 
 ENV JAVA_HOME /opt/${RUNTIME}1.${VERSION}.0_${UPDATE}
